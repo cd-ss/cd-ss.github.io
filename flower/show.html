@@ -3,7 +3,7 @@
     <meta charset='UTF-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="robots" content="index,follow"/>
-    <script type="text/javascript" src="static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+    <script type="text/javascript" src="//static.runoob.com/assets/qrcode/qrcode.min.js"></script>
     <style>
 ul
 {
@@ -57,7 +57,7 @@ with(m=Math)C=cos,S=sin,P=pow,R=random;c.width=f=c.height=b.clientHeight-175;h=-
 
 document.getElementById("name").innerHTML=getParam("n")+"送你的专属鲜花";
 document.getElementById("text").innerHTML=getParam("t");
-new QRCode(document.getElementById("qrcode"), window.location.href);
+var qr = new QRCode(document.getElementById("qrcode"), window.location.href);
 </script>
  </fieldset>
 </center>
